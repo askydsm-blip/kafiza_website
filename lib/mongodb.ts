@@ -79,6 +79,6 @@ export async function closeConnection(): Promise<void> {
  */
 export async function getCollection<T>(collectionName: string) {
   const db = await connectToDatabase();
-  return db.collection<T>(collectionName);
+  return db.collection(collectionName);
 }
 

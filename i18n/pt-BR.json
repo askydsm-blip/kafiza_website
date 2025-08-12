@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "contact": "Contato",
+    "beta": "Beta"
+  },
+  "home": {
+    "headline": "Kafiza: Conectando a Cultura do Café Brasileiro ao Mundo",
+    "subheadline": "Torradores na Nova Zelândia enfrentam dificuldades para acessar grãos brasileiros autênticos e rastreáveis. A Kafiza conecta-os diretamente aos produtores — compartilhando as raízes culturais, históricas e ambientais do legado cafeeiro do Brasil.",
+    "cta": "Junte-se ao movimento — garanta acesso antecipado e faça parte da transformação da cadeia global do café.",
+    "emailPlaceholder": "Digite seu e-mail"
+  },
+  "about": {
+    "header": "Nossa História: Uma Ponte Cultural Feita de Dados, Herança e Propósito",
+    "body": "A Kafiza nasceu de uma jornada pessoal — da alma cafeeira do Brasil à cena de torrefação especial da Nova Zelândia.\n\nFundada por um profissional de tecnologia brasileiro radicado na Nova Zelândia, a Kafiza une conhecimento cultural profundo e habilidades técnicas para resolver um desafio global. No Brasil, o café é mais que uma cultura — é um modo de vida. Na Nova Zelândia, os torradores buscam qualidade e transparência, mas muitas vezes não têm acesso a grãos brasileiros autênticos e rastreáveis.\n\nAo mesmo tempo, a maioria dos produtores no Brasil enfrenta barreiras para alcançar compradores internacionais — idioma, tecnologia e falta de visibilidade no mercado de cafés especiais.\n\nA missão da Kafiza é dupla:\n\nGlobalizar o alcance da cultura cafeeira brasileira, além do mercado de commodities.\n\nEmpoderar produtores e educar torradores por meio de dados transparentes, relações diretas e narrativas culturais.\n\nMais que um marketplace, a Kafiza é uma ponte de confiança — onde o café conecta pessoas, culturas e propósito."
+  },
+  "contact": {
+    "header": "Vamos Conversar",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "submit": "Enviar"
+  },
+  "beta": {
+    "header": "Participe do Beta",
+    "text": "Seja o primeiro a acessar a Kafiza e ajude a moldar o futuro do café ético.",
+    "emailPlaceholder": "Digite seu e-mail",
+    "submit": "Cadastrar"
+  },
+  "footer": {
+    "copyright": "© 2024 Kafiza. Todos os direitos reservados."
+  },
+  "form": {
+    "success": "Obrigado por se inscrever!"
+  }
+}

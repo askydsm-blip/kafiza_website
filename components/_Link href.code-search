@@ -1,0 +1,16 @@
+# Query: <Link href
+# ContextLines: 1
+
+5 results - 1 file
+
+components\Navbar.tsx:
+  14        <div className="flex items-center">
+  15:         <Link href="/"
+  16             className="flex items-center">
+
+  26        <div className="flex items-center space-x-3 md:space-x-6">
+  27:         <Link href="/" className="text-sm md:text-base hover:underline">{t.home}</Link>
+  28:         <Link href="/about" className="text-sm md:text-base hover:underline">{t.about}</Link>
+  29:         <Link href="/contact" className="text-sm md:text-base hover:underline">{t.contact}</Link>
+  30:         <Link href="/beta" className="text-sm md:text-base hover:underline">{t.beta}</Link>
+  31          <LanguageToggle />

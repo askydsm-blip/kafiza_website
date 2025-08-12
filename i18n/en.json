@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "beta": "Beta"
+  },
+  "home": {
+    "headline": "Kafiza: Bridging Brazilian Coffee Culture with the World",
+    "subheadline": "NZ roasters struggle to access authentic, traceable Brazilian beans. Kafiza connects them directly to farmers — while sharing the deep cultural, historical, and environmental roots of Brazil’s coffee legacy.",
+    "cta": "Join the movement — get early access and be part of reshaping the global coffee supply chain.",
+    "emailPlaceholder": "Enter your email"
+  },
+  "about": {
+    "header": "Our Story: A Cultural Bridge Brewed from Data, Heritage & Purpose",
+    "body": "Kafiza was born from a personal journey — from the coffee-growing soul of Brazil to the specialty roaster scene of New Zealand.\n\nFounded by a Brazilian-born, New Zealand-based tech professional, Kafiza blends deep cultural knowledge with technical skills to solve a global challenge. In Brazil, coffee is more than a crop — it’s a way of life. In New Zealand, roasters are hungry for quality and transparency, yet often lack access to authentic, traceable Brazilian beans.\n\nAt the same time, most farmers in Brazil face barriers to reaching international buyers — language, technology, and a lack of visibility in the specialty market.\n\nKafiza’s mission is twofold:\n\nGlobalize the reach of Brazilian coffee culture, beyond the commodity market.\n\nEmpower farmers and educate roasters through transparent data, direct relationships, and cultural storytelling.\n\nMore than a marketplace, Kafiza is a bridge of trust — where coffee connects people, cultures, and purpose."
+  },
+  "contact": {
+    "header": "Let’s Connect",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+  },
+  "beta": {
+    "header": "Join Our Beta",
+    "text": "Be the first to access Kafiza and help shape the future of ethical coffee sourcing.",
+    "emailPlaceholder": "Enter your email",
+    "submit": "Sign Up"
+  },
+  "footer": {
+    "copyright": "© 2024 Kafiza. All rights reserved."
+  },
+  "form": {
+    "success": "Thank you for signing up!"
+  }
+}

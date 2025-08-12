@@ -17,7 +17,7 @@ export class RoastersService {
    */
   async createRoaster(roasterData: Omit<Roaster, '_id' | 'createdAt' | 'updatedAt'>): Promise<ApiResponse<Roaster>> {
     try {
-      const collection = await getCollection<Roaster>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       const newRoaster: Roaster = {
         ...roasterData,
@@ -49,7 +49,7 @@ export class RoastersService {
    */
   async getRoasterById(id: string): Promise<ApiResponse<Roaster>> {
     try {
-      const collection = await getCollection<Roaster>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {
@@ -85,7 +85,7 @@ export class RoastersService {
    */
   async getRoasters(params: PaginationParams = {}): Promise<PaginatedResponse<Roaster>> {
     try {
-      const collection = await getCollection<Roaster>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       const {
         page = 1,
@@ -147,7 +147,7 @@ export class RoastersService {
    */
   async updateRoaster(id: string, updateData: Partial<Roaster>): Promise<ApiResponse<Roaster>> {
     try {
-      const collection = await getCollection<Roaster>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {
@@ -193,7 +193,7 @@ export class RoastersService {
    */
   async deleteRoaster(id: string): Promise<ApiResponse<{ deleted: boolean }>> {
     try {
-      const collection = await getCollection<Roaster>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {
@@ -233,7 +233,7 @@ export class RoastersService {
    */
   async searchRoasters(query: string, params: PaginationParams = {}): Promise<PaginatedResponse<Roaster>> {
     try {
-      const collection = await getCollection<Roaster>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       const {
         page = 1,
@@ -307,7 +307,7 @@ export class RoastersService {
    */
   async getRoastersByTier(tier: 'basic' | 'premium' | 'enterprise'): Promise<ApiResponse<Roaster[]>> {
     try {
-      const collection = await getCollection<Roaster>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       const roasters = await collection
         .find({ 
@@ -335,7 +335,7 @@ export class RoastersService {
    */
   async updateSubscriptionTier(id: string, tier: 'basic' | 'premium' | 'enterprise'): Promise<ApiResponse<Roaster>> {
     try {
-      const collection = await getCollection<Roaster>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {

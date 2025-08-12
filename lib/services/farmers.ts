@@ -17,7 +17,7 @@ export class FarmersService {
    */
   async createFarmer(farmerData: Omit<Farmer, '_id' | 'createdAt' | 'updatedAt'>): Promise<ApiResponse<Farmer>> {
     try {
-      const collection = await getCollection<Farmer>(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       const newFarmer: Farmer = {
         ...farmerData,
@@ -49,7 +49,7 @@ export class FarmersService {
    */
   async getFarmerById(id: string): Promise<ApiResponse<Farmer>> {
     try {
-      const collection = await getCollection<Farmer>(this.collectionName);
+      const collection = awaitgetCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {
@@ -85,7 +85,7 @@ export class FarmersService {
    */
   async getFarmers(params: PaginationParams = {}): Promise<PaginatedResponse<Farmer>> {
     try {
-      const collection = await getCollection<Farmer>(this.collectionName);
+      const collection = awaitgetCollection(this.collectionName);
       
       const {
         page = 1,
@@ -147,7 +147,7 @@ export class FarmersService {
    */
   async updateFarmer(id: string, updateData: Partial<Farmer>): Promise<ApiResponse<Farmer>> {
     try {
-      const collection = await getCollection<Farmer>(this.collectionName);
+      const collection = awaitgetCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {
@@ -193,7 +193,7 @@ export class FarmersService {
    */
   async deleteFarmer(id: string): Promise<ApiResponse<{ deleted: boolean }>> {
     try {
-      const collection = await getCollection<Farmer>(this.collectionName);
+      const collection = awaitgetCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {
@@ -233,7 +233,7 @@ export class FarmersService {
    */
   async searchFarmers(query: string, params: PaginationParams = {}): Promise<PaginatedResponse<Farmer>> {
     try {
-      const collection = await getCollection<Farmer>(this.collectionName);
+      const collection = awaitgetCollection(this.collectionName);
       
       const {
         page = 1,

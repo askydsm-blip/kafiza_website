@@ -77,7 +77,7 @@ export async function closeConnection(): Promise<void> {
 /**
  * Get a specific collection from the database
  */
-export async function getCollection<T>(collectionName: string) {
+export async function getCollection(collectionName: string) {
   const db = await connectToDatabase();
   return db.collection(collectionName);
 }

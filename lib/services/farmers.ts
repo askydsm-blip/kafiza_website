@@ -49,7 +49,7 @@ export class FarmersService {
    */
   async getFarmerById(id: string): Promise<ApiResponse<Farmer>> {
     try {
-      const collection = awaitgetCollection(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {

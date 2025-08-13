@@ -203,9 +203,11 @@ async function handleCreateRoaster(
         phone: contact.phone.trim(),
         website: contact.website?.trim() || undefined
       },
-      businessType: businessType as 'roastery' | 'cafe' | 'both',
-      description: description.trim(),
-      subscriptionTier: subscriptionTier as 'basic' | 'premium' | 'enterprise'
+      businessType: req.body.businessType,
+      description: req.body.description,
+      subscriptionTier: req.body.subscriptionTier,
+      isActive: true,        // Add this line
+      totalOrders: 0
     };
 
     // Create roaster using service

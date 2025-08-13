@@ -165,7 +165,7 @@ export class FarmersService {
         { _id: new ObjectId(id) },
         { $set: updateDoc },
         { returnDocument: 'after' }
-      );
+      ) as Farmer;
 
       if (!result) {
         return {

@@ -58,7 +58,7 @@ export class FarmersService {
         };
       }
 
-      const farmer = await collection.findOne({ _id: new ObjectId(id) });
+      const farmer = await collection.findOne({ _id: new ObjectId(id) }) as Farmer;
       
       if (!farmer) {
         return {
@@ -85,7 +85,7 @@ export class FarmersService {
    */
   async getFarmers(params: PaginationParams = {}): Promise<PaginatedResponse<Farmer>> {
     try {
-      const collection = awaitgetCollection(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       const {
         page = 1,

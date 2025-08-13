@@ -58,7 +58,7 @@ export class RoastersService {
         };
       }
 
-      const roaster = await collection.findOne({ _id: new ObjectId(id) });
+      const roaster = await collection.findOne({ _id: new ObjectId(id) }) as Roaster;
       
       if (!roaster) {
         return {
@@ -111,7 +111,7 @@ export class RoastersService {
         .sort(sort)
         .skip(skip)
         .limit(limit)
-        .toArray();
+        .toArray() as Roaster [];
 
       return {
         success: true,
@@ -271,7 +271,7 @@ export class RoastersService {
         .sort(sort)
         .skip(skip)
         .limit(limit)
-        .toArray();
+        .toArray() as Roaster [];
 
       return {
         success: true,

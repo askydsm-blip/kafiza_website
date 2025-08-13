@@ -193,8 +193,10 @@ async function handleCreateFarmer(
         phone: contact.phone?.trim() || undefined,
         whatsapp: contact.whatsapp?.trim() || undefined
       },
-      description: description.trim(),
-      images: Array.isArray(images) ? images : []
+        description: validatedData.description,
+        images: validImages,
+        isActive: true,
+        totalOrders: 0, 
     };
 
     // Create farmer using service

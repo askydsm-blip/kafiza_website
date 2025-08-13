@@ -271,7 +271,7 @@ export class FarmersService {
         .sort(sort)
         .skip(skip)
         .limit(limit)
-        .toArray();
+        .toArray() as Farmer;
 
       return {
         success: true,

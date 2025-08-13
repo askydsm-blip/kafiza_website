@@ -194,7 +194,7 @@ async function handleCreateFarmer(
         whatsapp: contact.whatsapp?.trim() || undefined
       },
         description: req.body.description,
-        images: validImages,
+        images: req.body.Images,
         isActive: true,
         totalOrders: 0, 
     };

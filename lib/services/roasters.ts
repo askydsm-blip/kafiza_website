@@ -165,7 +165,7 @@ export class RoastersService {
         { _id: new ObjectId(id) },
         { $set: updateDoc },
         { returnDocument: 'after' }
-      );
+      ) as Roaster;
 
       if (!result) {
         return {
@@ -315,7 +315,7 @@ export class RoastersService {
           isActive: true 
         })
         .sort({ createdAt: -1 })
-        .toArray();
+        .toArray() as Roaster [];
 
       return {
         success: true,

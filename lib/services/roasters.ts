@@ -353,7 +353,7 @@ export class RoastersService {
           } 
         },
         { returnDocument: 'after' }
-      );
+      ) as Roaster;
 
       if (!result) {
         return {

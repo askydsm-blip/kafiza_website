@@ -193,7 +193,7 @@ async function handleCreateFarmer(
         phone: contact.phone?.trim() || undefined,
         whatsapp: contact.whatsapp?.trim() || undefined
       },
-        description: validatedData.description,
+        description: req.body.description,
         images: validImages,
         isActive: true,
         totalOrders: 0, 

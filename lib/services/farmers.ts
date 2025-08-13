@@ -147,7 +147,7 @@ export class FarmersService {
    */
   async updateFarmer(id: string, updateData: Partial<Farmer>): Promise<ApiResponse<Farmer>> {
     try {
-      const collection = awaitgetCollection(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {
@@ -193,7 +193,7 @@ export class FarmersService {
    */
   async deleteFarmer(id: string): Promise<ApiResponse<{ deleted: boolean }>> {
     try {
-      const collection = awaitgetCollection(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       if (!ObjectId.isValid(id)) {
         return {
@@ -233,7 +233,7 @@ export class FarmersService {
    */
   async searchFarmers(query: string, params: PaginationParams = {}): Promise<PaginatedResponse<Farmer>> {
     try {
-      const collection = awaitgetCollection(this.collectionName);
+      const collection = await getCollection(this.collectionName);
       
       const {
         page = 1,
